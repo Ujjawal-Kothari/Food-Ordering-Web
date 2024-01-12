@@ -1,0 +1,267 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar{
+    display: flex;
+    height: 60px;
+   
+    position: sticky;
+    top: 0;
+  
+
+    
+}
+img{
+    height: 50px;
+    width: 60px;
+    margin: 20px;
+    margin-top: 0px;
+    margin-right: 0;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px black;
+    padding-bottom: 1px;
+ 
+}
+#navbar ul li a{
+    color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 12px;
+  text-decoration: none;
+
+  
+  
+}
+#navbar ul li a:hover{
+    color:black; 
+    background-color: white ;
+    text-shadow: none;
+}
+/* Home section  */
+#home{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 559px;
+    
+    
+}
+ #log{
+  
+    
+    margin-left: 390px;
+    border: 2px solid black;
+    background-color: crimson;
+    height: 30px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    padding-bottom: 3px;
+  
+}
+#home::before{
+content: "";
+background: url('../bg2.jpg') no-repeat center center/cover;
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.7;
+}
+
+#home p{
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    margin-top: 0;
+    padding-top: 0;
+  
+   
+}
+#home h1{
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    margin-bottom: 4%;
+   
+}
+.primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+    margin-top: 0px;
+    font-family: 'Bree Serif', serif; 
+    text-shadow: 4px 4px white;
+}
+.secondry{
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-family: 'Bree Serif', serif; 
+    margin-bottom: 0;
+
+}
+services .box p{
+   padding-top: 0;
+   font-family: 'Bree Serif', serif; 
+}
+.btn{
+    padding: 6px 20px;
+    background-color: brown;
+    color: white;
+    margin: 13px;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+
+} 
+/* service section  */
+#services{
+    display: flex;
+    margin: 34px;
+    
+}
+#services .box{
+    border: 2px solid brown;
+    height: 280px;
+    margin: 3px 6px;
+    padding: 30px;
+    border-radius: 28px;
+
+    background-color: rgb(235, 232, 228);
+  
+
+}
+
+  
+
+#services .box img{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+  
+  
+}
+#serv::before{
+    content: "";
+    background-image: url('../bg1.jpg'); 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul{
+    display: flex;
+    margin: 15px;
+    margin-left: 0;
+    /* font-family: 'Bree Serif', serif; */
+    padding-bottom: 120px;
+    font-weight: bold;
+
+    
+}
+#clients img{
+    height: 92px;
+    width: 152px;
+    margin-top: 0%;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client::before{
+    content: "";
+    position: absolute;
+    background: url('../bg.jpg');
+    width: 100%;
+    height: 45%;
+    z-index: -1;
+    opacity: 0.2;
+
+
+}
+client{
+    position: relative;
+}
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background-image: url('../contact.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contactbox form{
+    width: 40%;
+}
+#contactbox label{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.4rem;
+}
+
+
+#contactbox textarea, input { 
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 14px;
+padding-left: 30px;
+
+
+
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(41, 38, 38);
+    color: white;
+}
